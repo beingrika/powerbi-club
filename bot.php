@@ -507,7 +507,7 @@ if(!is_null($events)){
                             )
                         );       
                         break;
-                        case "whatis":
+                    case "whatis":
                             // กำหนด action 4 ปุ่ม 4 ประเภท
                             $actionBuilder0 = array(
                                 new MessageTemplateActionBuilder(
@@ -606,10 +606,10 @@ if(!is_null($events)){
                                     '- Flight Booking -', // ข้อความแสดงในปุ่ม
                                     'https://liff.line.me/1654945197-be2v6lWG'
                                 ),
-                                new UriTemplateActionBuilder(
-                                    '- Manage Itinerary -', // ข้อความแสดงในปุ่ม
-                                    'https://liff.line.me/1654945197-be2v6lWG'
-                                ),     
+                                // new UriTemplateActionBuilder(
+                                //     '- Manage Itinerary -', // ข้อความแสดงในปุ่ม
+                                //     'https://liff.line.me/1654945197-be2v6lWG'
+                                // ),     
                             );
                             $replyData = new TemplateMessageBuilder('Carousel',
                                 new CarouselTemplateBuilder(
